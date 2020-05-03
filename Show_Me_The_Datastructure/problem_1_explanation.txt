@@ -1,0 +1,8 @@
+LRU CACHE:
+	LEAST RECENTLY USED CACHE 
+The get and put operations for lru cache can be best implemented by using dictionaries which internally use hash function , soo the complexity is alwya O(1) for both
+get and set operations
+Here  i used a python list to keep trcak of elements and used functions append and pop with complexity O(1)
+
+Space Complexity:O(n) I.e the capacity of list 
+

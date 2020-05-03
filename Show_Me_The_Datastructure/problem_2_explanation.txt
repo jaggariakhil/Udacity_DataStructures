@@ -1,0 +1,13 @@
+File Recursion:
+	Here we need to find all the .c files in all the folders and subfolders of given path
+		
+
+	so i used recusrion which takes suffix and a path in which we need to traverse to find all the .c files.
+	I used a list to append all the .c files
+
+Time Complexity :O(n) for worst case where each path is a directory
+
+Space Complexity: Depth of list=K
+			NO of function calls:n
+				spacecomplexity(Kn)
+

@@ -1,0 +1,6 @@
+BlockChain:
+	Here i created two classes a Block and Linked_list
+	Block holds the details of block such as data,timestamp,prevhash etc
+	Linked list is used to connect all the blocks
+Time Complexity:O(1)
+Space Complexity:O(n)

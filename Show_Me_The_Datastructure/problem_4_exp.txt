@@ -1,0 +1,7 @@
+Active Directory:
+	Implemented the problem using Recursion 
+	Each time it fails to find a target it undergoes a Recurive call Until it finds targets or end of path
+	
+Time_complexity:O(Depth of n users)
+
+space:O(Depth of n users)

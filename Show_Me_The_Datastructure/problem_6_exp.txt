@@ -1,0 +1,6 @@
+Union and intersection of Linked list:
+
+Union:Used a set to find intersection and appended it to a new linked list
+
+Time Complexity:O(n)
+Space Complexity:O(n)
