@@ -1,0 +1,26 @@
+BIG-ONOTATION
+
+Task 0:
+ 	BIG-O-NOTATION: O(1)
+ 	constant time irrespective of input
+
+Task 1:
+ 	BIG-O-NOTATION: O(n)
+ 	This algorithm is linear time,because the two loops are independant of input and trace from first element to last element 
+
+Task 2:
+ 	BIG-O-NOTATION: O(n)
+	This algorithm is linear time,because the two loops are independant of input and trace from first element to last element and adds elements in dictionary
+
+Task 3:
+ 	BIG-O-NOTATION: O(nlog(n))
+ 	This algorithm is linear time because  it has a for loop of complexity O(n), it also has 
+   	a sorting function which is 0(nlogn). Combining these two results in 0(n + nlogn). 
+   	omiting less dominant terms we get nlogn as complexity
+   
+Task 4:
+ 	BIG-O-NOTATION: O(nlog(n))
+ 	This algorithm is linear time because even though it has two for loops of complexity O(n),O(n),which sums to be O(2n) it also has 
+   	a sorting function which is 0(nlogn). Combining these two results in 0(2n + nlogn). 
+   	omiting less dominant terms we get nlogn as complexity
+  
