@@ -22,8 +22,8 @@ class LRU_Cache(object):
         if(len(self.elements)>=self.capacity):
           del self.cache_dict[self.elements[0]]
           del self.elements[0]
-          
-        self.elements.append(key)  
+        if key not in self.elements:  
+            self.elements.append(key)  
         self.cache_dict[key]=value
 our_cache = LRU_Cache(5)
 
@@ -43,6 +43,7 @@ our_cache.set(8, 6);
 our_cache.get(4) #returns -1 since the cache is full and the lru ele is removed
 
 
-
+our_cache.set(4,8)
+our_cache.get(4) #returns 8
 
 

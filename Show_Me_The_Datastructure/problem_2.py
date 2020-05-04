@@ -19,7 +19,7 @@ def find_files(suffix, path, files=[]):
         path2 = path1 +  '/' + file
         
         if os.path.isdir(path2):
-            files = find_files(path1, f, files)
+            files = find_files(path1, file, files)
         elif path2.endswith(".c"):
             files.append(path2)
             
@@ -27,7 +27,12 @@ def find_files(suffix, path, files=[]):
         
     return files
 
-print(find_files('.', 'testdir'))
-print(find_files('.', ''))
-print()
-print(find_files('.', 'testdir/subdir3'))
+print(find_files('.', 'testdir'))   #['./testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c']
+
+
+
+
+print(find_files('.', ''))    #['./testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c', './testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c']
+
+
+print(find_files('.', 'testdir/subdir3'))   #['./testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c', './testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c', './testdir/subdir3/subsubdir1/b.c']

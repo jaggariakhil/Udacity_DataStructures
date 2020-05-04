@@ -80,7 +80,8 @@ def intersection(llist_1, llist_2):
             head2=head2.next
     for i in list2:
         if (i in list2):
-            list.append(i)
+            if i not in list:
+                list.append(i)
     for i in list:
         l.append(i)    
        
@@ -119,3 +120,27 @@ for i in element_2:
 
 print (union(linked_list_3,linked_list_4))
 print (intersection(linked_list_3,linked_list_4))
+
+
+
+
+# Test case 3
+
+linked_list_3 = LinkedList()
+linked_list_4 = LinkedList()
+
+element_1 = [2]
+element_2 = []
+
+for i in element_1:
+    linked_list_3.append(i)
+
+for i in element_2:
+    linked_list_4.append(i)
+
+print (union(linked_list_3,linked_list_4))#3
+print (intersection(linked_list_3,linked_list_4)) #''
+
+
+
+

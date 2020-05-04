@@ -1,7 +1,18 @@
-Active Directory:
-	Implemented the problem using Recursion 
-	Each time it fails to find a target it undergoes a Recurive call Until it finds targets or end of path
-	
-Time_complexity:O(Depth of n users)
+Huffman Encoding:
+		In this implementation i used 
+		 1.A dictionary for frequency of characters
+		2.Used a priority dictionary for prioritizing the characters based on Frequency
+		3.Created a priority pattern according to rules mentioned for huffman encoding of tree structure
+		4.used a encoding function to encode the priority pattern and create a encoding dictionary
+ 		5.Used the encodind_dict to encode the given input
+		6.Revered the encoding dictionary and used it to decode the encoded ip
 
-space:O(Depth of n users)
+
+
+
+TimeComplexity:O(n) for creating prioirty pattern and encoding and decoding of data
+
+Space Complexity:O(n) for storing and retreiving priority patterns and also the input string
+
+
+			n->length of input  
