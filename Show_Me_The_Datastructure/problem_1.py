@@ -47,3 +47,24 @@ our_cache.set(4,8)
 our_cache.get(4) #returns 8
 
 
+our_cache.get(10) #returns -1
+
+our_cache.set(10,15)
+our_cache.get(10) #returns 15
+
+our_cache.get(15000) #returns -1
+
+our_cache.set(20000000,233)
+our_cache.get(12000000) #returns 233
+
+
+
+our_cache.set(-1,15000)
+our_cache.get(-1) #returns -1
+
+
+our_cache.get(3) #returns -1
+
+
+
+

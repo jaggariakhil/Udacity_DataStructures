@@ -27,7 +27,13 @@ def find_files(suffix, path, files=[]):
         
     return files
 
+#testcase1
+
 print(find_files('.', 'testdir'))   #['./testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c']
+
+
+#testcase2
+
 
 
 
@@ -35,4 +41,14 @@ print(find_files('.', 'testdir'))   #['./testdir/subdir1/a.c', './testdir/subdir
 print(find_files('.', ''))    #['./testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c', './testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c']
 
 
+#testcase3
+
+
+
 print(find_files('.', 'testdir/subdir3'))   #['./testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c', './testdir/subdir1/a.c', './testdir/subdir3/subsubdir1/b.c', './testdir/subdir5/a.c', './testdir/t1.c', './testdir/subdir3/subsubdir1/b.c']
+
+
+#testcase4
+
+
+print(find_files('.', 'testdir/subdir5'))

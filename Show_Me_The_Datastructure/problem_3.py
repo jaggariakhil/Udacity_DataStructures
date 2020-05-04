@@ -176,5 +176,24 @@ if __name__ == "__main__":
     print ("The size of the decoded data is: {}\n".format(sys.getsizeof(decoded_data))) #51
     print ("The content of the decoded data is: {}\n".format(decoded_data))   #""
     
-    
+ #testcase4   
+if __name__ == "__main__":
+    codes = {}
 
+    a_great_sentence = "#$%^@"
+
+    print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence))) #54
+    print ("The content of the data is: {}\n".format(a_great_sentence))   ##$%^@
+
+    encoded_data, tree = huffman_encoding(a_great_sentence) 
+    # print(tree)
+    # print(encoded_data)
+    print ("The size of the encoded data is: {}\n".format(sys.getsizeof(encoded_data)))  #64
+    print ("The content of the encoded data is: {}\n".format(encoded_data))  #100111101110110
+ 
+    decoded_data = huffman_decoding(encoded_data, tree)
+
+    print ("The size of the decoded data is: {}\n".format(sys.getsizeof(decoded_data))) #54
+    print ("The content of the decoded data is: {}\n".format(decoded_data))   ###$%^@
+    
+    

@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -5,8 +6,6 @@ class Node:
 
     def __repr__(self):
         return str(self.value)
-
-
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -79,7 +78,7 @@ def intersection(llist_1, llist_2):
             list2.append(head2.value)
             head2=head2.next
     for i in list2:
-        if (i in list2):
+        if (i in list1):
             if i not in list:
                 list.append(i)
     for i in list:
@@ -126,21 +125,40 @@ print (intersection(linked_list_3,linked_list_4))
 
 # Test case 3
 
-linked_list_3 = LinkedList()
-linked_list_4 = LinkedList()
+linked_list_5 = LinkedList()
+linked_list_6 = LinkedList()
 
 element_1 = [2]
 element_2 = []
 
 for i in element_1:
-    linked_list_3.append(i)
+    linked_list_5.append(i)
 
 for i in element_2:
-    linked_list_4.append(i)
+    linked_list_6.append(i)
 
-print (union(linked_list_3,linked_list_4))#3
-print (intersection(linked_list_3,linked_list_4)) #''
+print (union(linked_list_5,linked_list_6))#3
+print (intersection(linked_list_5,linked_list_6)) #''
 
+
+
+
+# Test case 4
+
+linked_list_7 = LinkedList()
+linked_list_8 = LinkedList()
+
+element_1 = [800,400,255,363,8447,3837,22872]
+element_2 = [800,244,255,938,837,3939,9383]
+
+for i in element_1:
+    linked_list_7.append(i)
+
+for i in element_2:
+    linked_list_8.append(i)
+
+print (union(linked_list_7,linked_list_8))  #800 -> 255 -> 3939 -> 837 -> 9383 -> 938 -> 363 -> 400 -> 244 -> 22872 -> 3837 -> 8447 -> 
+print (intersection(linked_list_7,linked_list_8)) #800 -> 255 -> 
 
 
 

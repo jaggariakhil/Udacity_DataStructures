@@ -65,6 +65,13 @@ print(list.head.next.next.previous_hash)      #second_block_hash_value
 
 
 
+#testcase4
+list.insert("fourthblock")
+print(list.head.next.next.next.data) #fourth_block
+print(list.head.next.next.next.timestamp) #4th_block_time_stamp
+print(list.head.next.next.next.previous_hash)      #3rd_block_hash_value
+
+
 
 
  

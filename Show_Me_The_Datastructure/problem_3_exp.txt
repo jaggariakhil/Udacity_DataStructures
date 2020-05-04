@@ -10,9 +10,9 @@ Huffman Encoding:
 
 
 
-TimeComplexity:O(n) for creating prioirty pattern and encoding and decoding of data
+TimeComplexity:O(n) (for creating prioirty pattern and encoding and decoding of data)
 
-Space Complexity:O(n) for storing and retreiving priority patterns and also the input string
+Space Complexity:O(n) (for storing  priority patterns,encoding dictionaries and also the input string)
 
 
 			n->length of input  
