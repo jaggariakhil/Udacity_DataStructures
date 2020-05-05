@@ -1,0 +1,5 @@
+Max and Min:
+	Here used two pointers max an min and traced the array to find the minimum and maximum numbers and returned it
+
+Time complexity:O(n)
+Space Complexity:O(n)

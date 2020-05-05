@@ -1,0 +1,14 @@
+Trie implementaion:
+	Implemented a trie using two classe TrieNode and Trie
+	TrieNode consists of insert and suffix functions
+	Trie class consists of insert word and find functions
+
+
+Inserting a char:O(1)
+Suffixes: O(m^n) m->max no of elem n->levels
+
+Inserting a word:O(n)
+prefix:O(n)
+
+
+Space Complexity: O(n) Overall

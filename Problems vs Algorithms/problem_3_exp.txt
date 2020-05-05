@@ -1,0 +1,5 @@
+Rearrange array elements:
+	Here i sorted the elements in order and splited even index into one list and odd indexes into another so as to form to largest numbers
+
+Time Complexity:O(n) n is input size
+Space Complexity:O(n)

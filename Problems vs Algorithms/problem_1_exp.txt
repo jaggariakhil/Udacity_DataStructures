@@ -1,0 +1,6 @@
+Square of number:
+    Here i used binary search algorithm to solve the problem
+
+
+Time Complexity: O(logn)
+Space Complexity :O(1)

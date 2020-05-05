@@ -1,0 +1,5 @@
+search algorithm:
+	Here i have used a recursive binary search for finding index if its found in left side it returns directly else also checks the right part
+
+Time Complexity:O(logn) n is input size
+Space Complexity:O(1)

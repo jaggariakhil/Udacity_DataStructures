@@ -1,0 +1,5 @@
+Rearrange array elements:
+	Here i used to pointers for zero elemts index and digit2 elements index to keep track o them 
+	gradually sorted all the zero elemets to start and 2digit elements last so the problem gets sloved
+Time Complexity:O(n) n is input size
+Space Complexity:O(n) 
