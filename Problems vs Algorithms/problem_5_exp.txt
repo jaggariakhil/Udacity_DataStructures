@@ -9,7 +9,7 @@ Trie implementaion:
 
 
 Inserting a char:O(1)
-Suffixes: O(m^n) m->max no of elem n->levels
+Suffixes: O(m * n) m->max no of elem n->levels
 
 Inserting a word:O(n)
 prefix:O(n)
