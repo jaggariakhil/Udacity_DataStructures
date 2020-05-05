@@ -1,5 +1,8 @@
 Rearrange array elements:
 	Here i used to pointers for zero elemts index and digit2 elements index to keep track o them 
 	gradually sorted all the zero elemets to start and 2digit elements last so the problem gets sloved
+	
+	here the trick is if we sort all the zero elements to left side and all the 2's to right side 
+	the 1's get automatically sorted to the center
 Time Complexity:O(n) n is input size
 Space Complexity:O(n) 

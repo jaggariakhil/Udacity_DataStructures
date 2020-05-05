@@ -138,18 +138,32 @@ print(router.lookup("/home/features/extra")) # should print 'not found handler' 
 
 
 
+
 router = Router("root handler", "not found handler") # remove the 'not found handler' if you did not implement this
-router.add_handler("/home/facilities/free", "facilities handler")  # add a route
+router.add_handler("/home/facilities/free/paid", "facilities handler")  # add a route
 
 # some lookups with the expected output
 print(router.lookup("/")) # should print 'root handler'
-print(router.lookup("/home/facilities")) # should print 'not found handler' or None if you did not implement one
+print(router.lookup("/home/facilities/free/paid")) # should print 'not found handler' or None if you did not implement one
 print(router.lookup("/home/facilities/free")) # should print 'about handler'
 print(router.lookup("/home/facilities/")) # should print 'about handler' or None if you did not handle trailing slashes
 print(router.lookup("/home/facilities/about")) # should print 'not found handler' or None if you did not implement one
 
 
 
+
+
+router = Router("root handler", "not found handler") # remove the 'not found handler' if you did not implement this
+router.add_handler("home/organisation/faculty/salaries", "organisation handler")  # add a route
+
+# some lookups with the expected output
+print(router.lookup(" ")) # should print 'root handler'
+print(router.lookup("/home/organisation/faculty/salaries")) # should print 'not found handler' or None if you did not implement one
+print(router.lookup("/home/organistaion")) # should print 'about handler'
+print(router.lookup("/home/organisation/faculty/")) # should print 'about handler' or None if you did not handle trailing slashes
+print(router.lookup("/home/organisation/facilities")) # should print 'not found handler' or None if you did not implement one
+
+print(router.lookup("home/organisation/faculty"))
 
 
 

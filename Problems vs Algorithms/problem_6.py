@@ -7,18 +7,18 @@ def get_min_max(ints):
     """
     if len(ints)==0:
         return None
-    min=None
-    max=None
+    minvalue=None
+    maxvalue=None
     for i in ints:
-        if min == None :
-            min = i
-        elif i < min:    
-            min=i
-        if max == None :
-            max = i
-        elif i > max:
-            max = i
-    return(min,max)         
+        if minvalue == None :
+            minvalue = i
+        elif i < minvalue:    
+            minvalue=i
+        if maxvalue == None :
+            maxvalue = i
+        elif i > maxvalue:
+            maxvalue = i
+    return(minvalue,maxvalue)         
 
 ## Example Test Case of Ten Integers
 import random
@@ -51,4 +51,9 @@ print()
 l = [i for i in range(-24, -1)]  # a list containing -24 to -2
 random.shuffle(l)
 print("Pass:\nList: " + str(l) + "\n(min, max): " + str(get_min_max(l)) if ((-24, -2) == get_min_max(l)) else "Fail")
+print()
+
+l=[12,35,2827,82,3838,-75647,7272,74,0,2828,282,12,90,-19,20,-202,-890]
+random.shuffle(l)
+print("Pass:\nList: " + str(l) + "\n(min, max): " + str(get_min_max(l)) if ((-75647, 7272) == get_min_max(l)) else "Fail")
 print()

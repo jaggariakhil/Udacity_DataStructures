@@ -1,7 +1,11 @@
 Trie implementaion:
-	Implemented a trie using two classe TrieNode and Trie
+	tries are dynamic datastructure like trees
+	ITS application ccomes handy when we need predictions for words and to tell whether the words are correct
+	Implemented a trie using two classes TrieNode and Trie
 	TrieNode consists of insert and suffix functions
 	Trie class consists of insert word and find functions
+	The trie node consits of children dictionary which is empty and a word=False
+
 
 
 Inserting a char:O(1)

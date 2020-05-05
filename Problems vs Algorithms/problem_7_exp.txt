@@ -1,7 +1,15 @@
+
 Http route Using Trie
+
+tries are dynamic datastructure like trees
+	ITS application ccomes handy when we need predictions for words and to tell whether the words are correct
+
+
 Implented classes RouteTrieNode and RouteTrie
 with functions lookup,insert,split etc
 also used handler ,value elements
+
+Implemented using trie datasrtucture which comes very handy
 
 Time Complexity:O(n)
 Space Complexity:O(n)

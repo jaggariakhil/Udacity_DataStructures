@@ -1,5 +1,7 @@
 Square of number:
     Here i used binary search algorithm to solve the problem
+	used a recursivebinary search algorithm to get a complexity of O(logn)
+	Used two functions binarysearch and recursive binary search		
 
 
 Time Complexity: O(logn)

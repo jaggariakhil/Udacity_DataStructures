@@ -1,5 +1,9 @@
 Max and Min:
 	Here used two pointers max an min and traced the array to find the minimum and maximum numbers and returned it
+	The algorithm traced all the elememts in the array
+	intially the minvalue and maxvalue are intialised to null
+	when a first value of array encounters both are initialized with first values of array
+	later they are compared with every value of array to give final ouput
 
 Time complexity:O(n)
 Space Complexity:O(n)
